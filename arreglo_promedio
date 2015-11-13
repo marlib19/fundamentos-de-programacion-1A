@@ -1,0 +1,16 @@
+ #include<stdio.h>
+int numeros[10];
+int i;
+float prom;
+int main()
+{
+printf("Algoritmo que realiza el promedio de diez numeros \n");
+for(i=0;i<10;i++)
+{
+printf("Numero a promediar: ");
+scanf("%d \n", &numeros[i]);
+prom=prom+numeros[i];
+}
+prom=prom/10;
+printf("El promedio es: %f", prom);
+}
